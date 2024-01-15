@@ -1,0 +1,51 @@
+:root {
+    --size: 75px;
+    --primaryColor: lightgrey;
+
+}
+
+body {
+    background-color: var(--primaryColor);
+    font-family: 'Raleway', sans-serif;
+    text-wrap: pretty;
+    height: 100vh;
+
+    & p {
+        padding: 0.2rem;
+    }
+}
+
+header>h1 {
+    border-bottom: 1px solid black;
+    font-family: 'Rubik Doodle Shadow', system-ui;
+    font-weight: 400;
+    padding-bottom: 1rem;
+    text-align: center;
+    text-wrap: balance;
+}
+
+.s-two {
+    align-items: center;
+    background-color: rgb(42, 65, 165);
+    display: flex;
+    gap: 2rem;
+    height: 50vh;
+    justify-content: center;
+    padding: 1rem;
+
+    & .block1 {
+        background-color: deepskyblue;
+        display: grid;
+        height: var(--size);
+        place-items: center;
+        width: var(--size);
+    }
+
+    & .block2 {
+        width: var(--size);
+        height: var(--size);
+        background-color: azure;
+        display: grid;
+        place-items: center;
+    }
+}
